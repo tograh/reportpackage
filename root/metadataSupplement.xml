@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadataSupplement>
+    <tables>
+        <table dataLocale="en_US" dataSources="ds7" resourceIdentifier="'cas-shared-default','HPS','WORLDCOMBINED','en_US'" tableModifiedTimeStamp="2022-08-03T16:51:17.623Z">
+            <columns>
+                <column dataType="double" format="BEST12." label="Longitude" xref="x"/>
+                <column dataType="double" format="BEST12." label="Latitude" xref="y"/>
+                <column dataType="date" format="DATE9" label="Date" xref="Date"/>
+                <column dataType="string" label="Grouping" xref="Grouping"/>
+                <column dataType="string" label="Region" xref="Region"/>
+                <column dataType="string" label="Country" xref="Country"/>
+                <column dataType="string" label="Income Group" xref="Income_Group"/>
+                <column dataType="double" format="BEST12." label="Agricultural land (% of land area)" xref="Agricultural_land____of_land_are"/>
+                <column dataType="double" format="BEST12." label="Forest area (sq# km)" xref="Forest_area__sq__km_"/>
+                <column dataType="double" format="BEST12." label="Surface area (sq# km)" xref="Surface_area__sq__km_"/>
+                <column dataType="double" format="DOLLAR21.2" label="Foreign direct investment, net (BoP, current US$)" xref="Foreign_direct_investment__net__"/>
+                <column dataType="double" format="DOLLAR21.2" label="Workers' remittances and compensation of employees, received (cu" xref="Workers__remittances_and_compens"/>
+                <column dataType="double" format="BEST12." label="Market capitalization of listed companies (% of GDP)" xref="Market_capitalization_of_listed_"/>
+                <column dataType="double" format="DOLLAR21.2" label="External debt stocks, concessional (DOD, current US$)" xref="External_debt_stocks__concession"/>
+                <column dataType="double" format="DOLLAR21.2" label="Net official development assistance and official aid received (c" xref="Net_official_development_assista"/>
+                <column dataType="double" format="BEST12." label="Total debt service (% of exports of goods, services and income)" xref="Total_debt_service____of_exports"/>
+                <column dataType="double" format="BEST12." label="Electric power consumption (kWh per capita)" xref="Electric_power_consumption__kWh_"/>
+                <column dataType="double" format="BEST12." label="Energy use (kg of oil equivalent per capita)" xref="Energy_use__kg_of_oil_equivalent"/>
+                <column dataType="double" format="BEST12." label="CO2 emissions (kt)" xref="CO2_emissions__kt_"/>
+                <column dataType="double" format="BEST12." label="CO2 emissions (metric tons per capita)" xref="CO2_emissions__metric_tons_per_c"/>
+                <column dataType="double" format="BEST12." label="Renewable internal freshwater resources per capita (cubic meters" xref="Renewable_internal_freshwater_re"/>
+                <column dataType="double" format="BEST12." label="Cash surplus/deficit (% of GDP)" xref="Cash_surplus_deficit____of_GDP_"/>
+                <column dataType="double" format="BEST12." label="Revenue, excluding grants (% of GDP)" xref="Revenue__excluding_grants____of_"/>
+                <column dataType="double" format="BEST12." label="Time required to start a business (days)" xref="Time_required_to_start_a_busines"/>
+                <column dataType="double" format="BEST12." label="Roads, paved (% of total roads)" xref="Roads__paved____of_total_roads_"/>
+                <column dataType="double" format="BEST12." label="Mobile cellular subscriptions (per 100 people)" xref="Mobile_cellular_subscriptions__p"/>
+                <column dataType="double" format="BEST12." label="Internet users" xref="Internet_users"/>
+                <column dataType="double" format="BEST12." label="Internet users (per 100 people)" xref="Internet_users__per_100_people_"/>
+                <column dataType="double" format="BEST12." label="Military expenditure (% of GDP)" xref="Military_expenditure____of_GDP_"/>
+                <column dataType="double" format="BEST12." label="Exports of goods and services (% of GDP)" xref="Exports_of_goods_and_services___"/>
+                <column dataType="double" format="BEST12." label="Gross capital formation (% of GDP)" xref="Gross_capital_formation____of_GD"/>
+                <column dataType="double" format="BEST12." label="Imports of goods and services (% of GDP)" xref="Imports_of_goods_and_services___"/>
+                <column dataType="double" format="BEST12." label="Agriculture, value added (% of GDP)" xref="Agriculture__value_added____of_G"/>
+                <column dataType="double" format="BEST12." label="Industry, value added (% of GDP)" xref="Industry__value_added____of_GDP_"/>
+                <column dataType="double" format="BEST12." label="Services, etc#, value added (% of GDP)" xref="Services__etc___value_added____o"/>
+                <column dataType="double" format="BEST12." label="Inflation, GDP deflator (annual %)" xref="Inflation__GDP_deflator__annual_"/>
+                <column dataType="double" format="DOLLAR21.2" label="GDP (current US$)" xref="GDP__current_US__"/>
+                <column dataType="double" format="BEST12." label="GDP growth (annual %)" xref="GDP_growth__annual___"/>
+                <column dataType="double" format="DOLLAR21.2" label="GDP per capita (current US$)" xref="GDP_per_capita__current_US__"/>
+                <column dataType="double" format="DOLLAR21.2" label="GNI (current US$)" xref="GNI__current_US__"/>
+                <column dataType="double" format="DOLLAR21.2" label="GNI, PPP (current international $)" xref="GNI__PPP__current_international_"/>
+                <column dataType="double" format="DOLLAR21.2" label="GNI per capita, Atlas method (current US$)" xref="GNI_per_capita__Atlas_method__cu"/>
+                <column dataType="double" format="DOLLAR21.2" label="GNI per capita, PPP (current international $)" xref="GNI_per_capita__PPP__current_int"/>
+                <column dataType="double" format="BEST12." label="Ratio of girls to boys in primary and secondary education (%)" xref="Ratio_of_girls_to_boys_in_primar"/>
+                <column dataType="double" format="BEST12." label="Primary completion rate, total (% of relevant age group)" xref="Primary_completion_rate__total__"/>
+                <column dataType="double" format="BEST12." label="Prevalence of HIV, total (% of population ages 15-49)" xref="Prevalence_of_HIV__total____of_p"/>
+                <column dataType="double" format="BEST12." label="Mortality rate, under-5 (per 1,000)" xref="Mortality_rate__under_5__per_1_0"/>
+                <column dataType="double" format="BEST12." label="Improved water source (% of population with access)" xref="Improved_water_source____of_popu"/>
+                <column dataType="double" format="BEST12." label="Immunization, measles (% of children ages 12-23 months)" xref="Immunization__measles____of_chil"/>
+                <column dataType="double" format="BEST12." label="Improved sanitation facilities, urban (% of urban population wit" xref="Improved_sanitation_facilities__"/>
+                <column dataType="double" format="BEST12." label="Births attended by skilled health staff (% of total)" xref="Births_attended_by_skilled_healt"/>
+                <column dataType="double" format="BEST12." label="Malnutrition prevalence, weight for age (% of children under 5)" xref="Malnutrition_prevalence__weight_"/>
+                <column dataType="double" format="BEST12." label="Income share held by lowest 20%" xref="Income_share_held_by_lowest_20_"/>
+                <column dataType="double" format="BEST12." label="Poverty headcount ratio at national poverty line (% of populatio" xref="Poverty_headcount_ratio_at_natio"/>
+                <column dataType="double" format="BEST12." label="Net migration" xref="Net_migration"/>
+                <column dataType="double" format="BEST12." label="Adolescent fertility rate (births per 1,000 women ages 15-19)" xref="Adolescent_fertility_rate__birth"/>
+                <column dataType="double" format="BEST12." label="Contraceptive prevalence (% of women ages 15-49)" xref="Contraceptive_prevalence____of_w"/>
+                <column dataType="double" format="BEST12." label="Mortality rate, infant (per 1,000 live births)" xref="Mortality_rate__infant__per_1_00"/>
+                <column dataType="double" format="BEST12." label="Life expectancy at birth, total (years)" xref="Life_expectancy_at_birth__total_"/>
+                <column dataType="double" format="BEST12." label="Fertility rate, total (births per woman)" xref="Fertility_rate__total__births_pe"/>
+                <column dataType="double" format="BEST12." label="Population growth (annual %)" xref="Population_growth__annual___"/>
+                <column dataType="double" format="BEST12." label="Population, total" xref="Population__total"/>
+                <column dataType="double" format="BEST12." label="Merchandise trade (% of GDP)" xref="Merchandise_trade____of_GDP_"/>
+                <column dataType="double" format="BEST12." label="Net barter terms of trade index (2000 = 100)" xref="Net_barter_terms_of_trade_index_"/>
+                <column dataType="double" format="BEST12." label="High-technology exports (% of manufactured exports)" xref="High_technology_exports____of_ma"/>
+            </columns>
+        </table>
+    </tables>
+    <version>2</version>
+</metadataSupplement>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SASReport xmlns="http://www.sas.com/sasreportmodel/bird-4.22.0" label="WorldCombinedScatter" implicitInteractions="reportPrompt sectionPrompt" createdLocale="en" createdVersion="4.22.0" dateCreated="2022-08-05T15:26:30Z" dateModified="2022-08-05T15:26:30Z" createdApplication="SAS Visual Analytics 2020" lastModifiedApplication="SAS Visual Analytics 2020" nextUniqueNameIndex="105">
+	<Results>
+		<Result ref="dd79" type="relational" status="warning" dataLevel="baseline" label="Coordinate" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2022-08-03T16:51:17.623Z">
+			<Messages>
+				<Message messageKey="geoMapNoMatchesFoundForRequestedItems" messageLevel="warning">
+					<MessageText>No matches were found for supplied geography data items: Channel Islands, Netherlands Antilles, Syrian Arab Republic, Timor-Leste.</MessageText>
+				</Message>
+			</Messages>
+			<Variables>
+				<StringVariable label="Country" ref="bi102" varname="bi102" column="c0"/>
+				<NumericVariable format="BEST." usage="categorical" coordinateSpace="WGS84" label="Latitude" ref="bi90" varname="bi90" column="c1"/>
+				<NumericVariable format="BEST." usage="categorical" coordinateSpace="WGS84" label="Longitude" ref="bi89" varname="bi89" column="c2"/>
+				<StringVariable label="Country" ref="bi94" varname="bi94" column="c3"/>
+				<StringVariable label="Country" ref="bi103" varname="bi103" column="c4"/>
+			</Variables>
+			<Columns>
+				<StringColumn maxLength="3" colname="c0" encoding="text"/>
+				<NumericColumn dataType="double" colname="c1" encoding="text"/>
+				<NumericColumn dataType="double" colname="c2" encoding="text"/>
+				<StringColumn maxLength="3" colname="c3" encoding="text"/>
+				<StringColumn maxLength="3" colname="c4" encoding="text"/>
+			</Columns>
+			<DataFile contentKey="7BSCGZBNZNF6NRTL2KZHSA35IICY4IZ5" size="7760" format="CSV" rowCount="183" grandTotal="false" dataLayout="minimal" file="dd79.csv" isIndexed="true" availableRowCount="183"/>
+			<StringTableFile contentKey="IACZMSMAMQL7W2EQDX7VYRESOFPJDSO6" size="2137" format="CSV" rowCount="183" file="dd79index.csv"/>
+		</Result>
+	</Results>
+	<DataDefinitions>
+		<DataDefinition dataSource="ds98" type="mapprovider" name="dd96"/>
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd77">
+			<BusinessItems>
+				<SyntheticItems name="si88">
+					<Item purpose="geoItem" root="bi99" name="bi102"/>
+					<Item purpose="dataTip" root="bi99" name="bi103"/>
+					<Item purpose="longitude" root="bi101" name="bi89"/>
+					<Item purpose="latitude" root="bi100" name="bi90"/>
+					<Item purpose="geoItemRaw" root="bi99" name="bi94"/>
+				</SyntheticItems>
+				<RelationalDataItem includeAssociatedColumns="true" name="bi99" base="bi16"/>
+				<LookupDataItem property="longitude" lookup="bi16" name="bi101"/>
+				<LookupDataItem property="latitude" lookup="bi16" name="bi100"/>
+			</BusinessItems>
+			<DataDefinition dataSource="ds7" type="procedural" name="dd78">
+				<ProceduralQuery type="geoMap" scoreCodeNumber="87">
+					<Arguments>
+						<Argument purpose="geoType">
+							<StringValue>coordinate</StringValue>
+						</Argument>
+						<Argument purpose="geoItem">
+							<ReferenceValue>bi99</ReferenceValue>
+						</Argument>
+						<Argument purpose="longitude">
+							<ReferenceValue>bi101</ReferenceValue>
+						</Argument>
+						<Argument purpose="latitude">
+							<ReferenceValue>bi100</ReferenceValue>
+						</Argument>
+					</Arguments>
+				</ProceduralQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" maxRowsLookup="geoScatter" maxRowsBehavior="truncate" name="dd79" syntheticItems="si88"/>
+				</ResultDefinitions>
+			</DataDefinition>
+		</ParentDataDefinition>
+	</DataDefinitions>
+	<DataSources>
+		<DataSource label="WORLDCOMBINED" type="relational" name="ds7">
+			<CasResource server="cas-shared-default" library="HPS" table="WORLDCOMBINED" locale="en_US"/>
+			<BusinessItemFolder>
+				<DataItem name="bi8" xref="Adolescent_fertility_rate__birth"/>
+				<DataItem name="bi9" xref="Agricultural_land____of_land_are"/>
+				<DataItem name="bi10" xref="Agriculture__value_added____of_G"/>
+				<DataItem name="bi11" xref="Births_attended_by_skilled_healt"/>
+				<DataItem name="bi12" xref="Cash_surplus_deficit____of_GDP_"/>
+				<DataItem name="bi13" xref="CO2_emissions__kt_"/>
+				<DataItem name="bi14" xref="CO2_emissions__metric_tons_per_c"/>
+				<DataItem name="bi15" xref="Contraceptive_prevalence____of_w"/>
+				<DataItem name="bi16" xref="Country" usage="categorical">
+					<GeoInfo geoType="external" coordinateSpace="WGS84">
+						<Lookup property="longitude" externalSource="country.names"/>
+						<Lookup property="latitude" externalSource="country.names"/>
+						<Lookup property="polygonId" externalSource="country.names"/>
+						<Lookup property="mapId" externalSource="country.names"/>
+					</GeoInfo>
+				</DataItem>
+				<DataItem name="bi17" xref="Date"/>
+				<DataItem name="bi18" xref="Electric_power_consumption__kWh_"/>
+				<DataItem name="bi19" xref="Energy_use__kg_of_oil_equivalent"/>
+				<DataItem name="bi20" xref="Exports_of_goods_and_services___"/>
+				<DataItem name="bi21" xref="External_debt_stocks__concession"/>
+				<DataItem name="bi22" xref="Fertility_rate__total__births_pe"/>
+				<DataItem name="bi23" xref="Foreign_direct_investment__net__"/>
+				<DataItem name="bi24" xref="Forest_area__sq__km_"/>
+				<DataItem name="bi25" xref="GDP__current_US__"/>
+				<DataItem name="bi26" xref="GDP_growth__annual___"/>
+				<DataItem name="bi27" xref="GDP_per_capita__current_US__"/>
+				<DataItem name="bi28" xref="GNI__current_US__"/>
+				<DataItem name="bi29" xref="GNI_per_capita__Atlas_method__cu"/>
+				<DataItem name="bi30" xref="GNI_per_capita__PPP__current_int"/>
+				<DataItem name="bi31" xref="GNI__PPP__current_international_"/>
+				<DataItem name="bi32" xref="Gross_capital_formation____of_GD"/>
+				<DataItem name="bi33" xref="Grouping"/>
+				<DataItem name="bi34" xref="High_technology_exports____of_ma"/>
+				<DataItem name="bi35" xref="Immunization__measles____of_chil"/>
+				<DataItem name="bi36" xref="Imports_of_goods_and_services___"/>
+				<DataItem name="bi37" xref="Improved_sanitation_facilities__"/>
+				<DataItem name="bi38" xref="Improved_water_source____of_popu"/>
+				<DataItem name="bi39" xref="Income_Group"/>
+				<DataItem name="bi40" xref="Income_share_held_by_lowest_20_"/>
+				<DataItem name="bi41" xref="Industry__value_added____of_GDP_"/>
+				<DataItem name="bi42" xref="Inflation__GDP_deflator__annual_"/>
+				<DataItem name="bi43" xref="Internet_users"/>
+				<DataItem name="bi44" xref="Internet_users__per_100_people_"/>
+				<DataItem name="bi45" xref="y"/>
+				<DataItem name="bi46" xref="Life_expectancy_at_birth__total_"/>
+				<DataItem name="bi47" xref="x"/>
+				<DataItem name="bi48" xref="Malnutrition_prevalence__weight_"/>
+				<DataItem name="bi49" xref="Market_capitalization_of_listed_"/>
+				<DataItem name="bi50" xref="Merchandise_trade____of_GDP_"/>
+				<DataItem name="bi51" xref="Military_expenditure____of_GDP_"/>
+				<DataItem name="bi52" xref="Mobile_cellular_subscriptions__p"/>
+				<DataItem name="bi53" xref="Mortality_rate__infant__per_1_00"/>
+				<DataItem name="bi54" xref="Mortality_rate__under_5__per_1_0"/>
+				<DataItem name="bi55" xref="Net_barter_terms_of_trade_index_"/>
+				<DataItem name="bi56" xref="Net_migration"/>
+				<DataItem name="bi57" xref="Net_official_development_assista"/>
+				<DataItem name="bi58" xref="Population_growth__annual___"/>
+				<DataItem name="bi59" xref="Population__total"/>
+				<DataItem name="bi60" xref="Poverty_headcount_ratio_at_natio"/>
+				<DataItem name="bi61" xref="Prevalence_of_HIV__total____of_p"/>
+				<DataItem name="bi62" xref="Primary_completion_rate__total__"/>
+				<DataItem name="bi63" xref="Ratio_of_girls_to_boys_in_primar"/>
+				<DataItem name="bi64" xref="Region"/>
+				<DataItem name="bi65" xref="Renewable_internal_freshwater_re"/>
+				<DataItem name="bi66" xref="Revenue__excluding_grants____of_"/>
+				<DataItem name="bi67" xref="Roads__paved____of_total_roads_"/>
+				<DataItem name="bi68" xref="Services__etc___value_added____o"/>
+				<DataItem name="bi69" xref="Surface_area__sq__km_"/>
+				<DataItem name="bi70" xref="Time_required_to_start_a_busines"/>
+				<DataItem name="bi71" xref="Total_debt_service____of_exports"/>
+				<DataItem name="bi72" xref="Workers__remittances_and_compens"/>
+				<PredefinedDataItem calculation="totalCount" name="bi73" label="Frequency" usage="quantitative" format="COMMA12."/>
+				<PredefinedDataItem calculation="totalCountPercent" name="bi74" label="Frequency Percent" usage="quantitative" format="PERCENT20.2"/>
+			</BusinessItemFolder>
+		</DataSource>
+		<DataSource label="OpenStreetMapProvider" type="mapprovider" name="ds98">
+			<OpenStreetMapProvider useSSL="false" osmType="SAS_AUTO"/>
+		</DataSource>
+	</DataSources>
+	<VisualElements>
+		<Graph graphType="geo" graphSubType="geoScatter" supplementalVisuals="ve104" mapData="dd96" resultDefinitions="dd79" name="ve76" data="dd77" label="Geo coordinate - Country 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi94">
+			<EditorProperties>
+				<Property key="isAutoLabel">true</Property>
+				<Property key="derivedVisualType">true</Property>
+			</EditorProperties>
+			<Title auto="true"><P><DynamicSpan key="bird.autotitle.template.geo.coordinates.fmt.txt"><Substitutions><Substitution valueType="label" variables="bi16"/></Substitutions></DynamicSpan></P></Title>
+<![CDATA[<StatGraph border="false" opaque="false" includeMissingDiscrete="true" missingValueDisplay="autolabel" labelingLimit="500" overplottingPolicy="REDUCEMARKERSIZE">
+    <Dimension/>
+    <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
+    <Dimension/>
+    <Meta>
+        <DataNameMap>
+            <Entry model="LayoutOverlayMap_1" data="dd79"/>
+        </DataNameMap>
+    </Meta>
+    <LayoutOverlayMap cycleAttrs="true" cycleColorResponses="true" dataLabelThinPolicy="nonoverlapping" name="LayoutOverlayMap_1">
+        <MapLayer name="MapLayer_1"/>
+        <ScatterPlot name="Scatter" dataTransparency="0.129999995" tipListPolicy="replace" compactLabelFormats="true" auxiliary="Role1 Role1" tip="Role2" x="dd79#bi89" y="dd79#bi90">
+            <ProximityClusterOptions proximityCluster="auto" clusterDistance="150px"/>
+            <Roles>
+                <Role name="Role1" type="variable">dd79#bi102</Role>
+                <Role name="Role2" type="variable">dd79#bi103</Role>
+            </Roles>
+        </ScatterPlot>
+    </LayoutOverlayMap>
+    <LayoutGlobalLegend allowCollapsed="true">
+        <ContinuousLegend border="false" opaque="false" valueStyle="inflections" displayMissing="automatic" extractScale="true" title_type="KEYWORD" title="AUTO">
+            <GraphNames>
+                <Value>Scatter</Value>
+            </GraphNames>
+        </ContinuousLegend>
+        <SizeLegend border="false" opaque="false" extractScale="true" title_type="KEYWORD" title="AUTO">
+            <GraphNames>
+                <Value>Scatter</Value>
+            </GraphNames>
+        </SizeLegend>
+        <AutoLegend>
+            <GraphNames>
+                <Value>Scatter</Value>
+            </GraphNames>
+        </AutoLegend>
+    </LayoutGlobalLegend>
+    <Animation keyframesPerSecond="1" playDirectionForward="true" repeatEnabled="false"/>
+</StatGraph>]]>
+		</Graph>
+		<Table columnSizing="autoFill" resultDefinitions="dd79" name="ve104" data="dd77" applyDynamicBrushes="yes">
+			<Columns>
+				<Column variable="bi102"/>
+			</Columns>
+		</Table>
+	</VisualElements>
+	<View>
+		<Section name="vi6" label="Page 1">
+			<Body>
+				<MediaContainer target="mt2">
+					<ResponsiveLayout orientation="vertical" overflow="fit">
+						<Weights mediaTarget="mt5" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt4" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt3" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+					</ResponsiveLayout>
+					<Visual ref="ve76" name="vi75">
+						<ResponsiveConstraint>
+							<WidthConstraint>
+								<Width mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+							</WidthConstraint>
+							<HeightConstraint>
+								<Height mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+							</HeightConstraint>
+						</ResponsiveConstraint>
+					</Visual>
+				</MediaContainer>
+			</Body>
+		</Section>
+	</View>
+	<MediaSchemes>
+		<MediaScheme name="ms1">
+			<BaseStylesheetResource file="basems1.css" theme="opal"/>
+			<Stylesheet><![CDATA[]]></Stylesheet>
+		</MediaScheme>
+	</MediaSchemes>
+	<MediaTargets>
+		<MediaTarget windowSize="default" scheme="ms1" name="mt2"/>
+		<MediaTarget windowSize="small" scheme="ms1" name="mt3"/>
+		<MediaTarget windowSize="medium" scheme="ms1" name="mt4"/>
+		<MediaTarget windowSize="large" scheme="ms1" name="mt5"/>
+	</MediaTargets>
+	<Properties>
+		<Property key="displayDataSource">ds7</Property>
+		<Property key="ReportPackagesServiceVersion">2020.1.4</Property>
+		<Property key="ReportDataServiceVersion">2020.1.4</Property>
+	</Properties>
+	<ExportProperties>
+		<Export destination="pdf">
+			<Property key="showCoverPage" value="true"></Property>
+			<Property key="showPageNumbers" value="true"></Property>
+		</Export>
+	</ExportProperties>
+	<History>
+	<Versions>
+		<Version key="4.22.0" lastDate="2022-08-05T00:00:00Z"/>
+	</Versions>
+	<Editors>
+		<Editor applicationName="VA">
+			<Revision editorVersion="2020" lastDate="2022-08-05T15:26:30.435Z"/>
+		</Editor>
+	</Editors>
+</History>
+	<SASReportState>
+		<View/>
+	</SASReportState>
+</SASReport>

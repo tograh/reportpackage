@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<reportPackage>
+    <dataLevel>offline</dataLevel>
+    <files>
+        <file contentKey="LV43Y2YJOIBMBMS5ZIZ7OXBTZ7OOEJ6X" name="report" type="report">
+            <links>
+                <link href="/report.xml" method="GET" rel="content" type="application/vnd.sas.report.content" uri="/report.xml"/>
+            </links>
+        </file>
+        <file contentKey="JXLOJEBNZNZULQC65RHNUL3NICYQRLRA" name="basems1.css" type="css">
+            <links>
+                <link href="/css/basems1.css" method="GET" rel="content" type="text/css" uri="/css/basems1.css"/>
+            </links>
+        </file>
+        <file contentKey="RUBEAFOKUPC6YIOA4CHSCHYYUAPXKR26" name="highcontrast.css" type="css">
+            <links>
+                <link href="/css/highcontrast.css" method="GET" rel="content" type="text/css" uri="/css/highcontrast.css"/>
+            </links>
+        </file>
+        <file contentKey="7BSCGZBNZNF6NRTL2KZHSA35IICY4IZ5" name="dd79.csv" type="data">
+            <links>
+                <link href="/data/dd79.csv" method="GET" rel="content" type="text/csv" uri="/data/dd79.csv"/>
+            </links>
+        </file>
+        <file contentKey="IACZMSMAMQL7W2EQDX7VYRESOFPJDSO6" name="dd79index.csv" type="data">
+            <links>
+                <link href="/data/dd79index.csv" method="GET" rel="content" type="text/csv" uri="/data/dd79index.csv"/>
+            </links>
+        </file>
+        <file contentKey="FBMZLCJD35PBIUOGWOFWS2LOYYG4MADY" name="metadataSupplement" type="resource">
+            <links>
+                <link href="/metadataSupplement.xml" method="GET" rel="content" type="application/vnd.sas.report.metadata.supplement" uri="/metadataSupplement.xml"/>
+            </links>
+        </file>
+        <file contentKey="IQALPX6DQRUBQQGVDNS6Y3YXSNZWGXWV" name="index.html" type="html">
+            <links>
+                <link href="/index.html" method="GET" rel="content" type="text/html" uri="/index.html"/>
+            </links>
+        </file>
+        <file contentKey="F4QYEK24T7AKUC4OLVITKZ7HXNWYCOUF" name="packageIndex.html" type="html">
+            <links>
+                <link href="/packageIndex.html" method="GET" rel="content" type="text/html" uri="/packageIndex.html"/>
+            </links>
+        </file>
+        <file contentKey="H6GWZ7W6TDEHGUKTRNHJTFBSAHLWUAXX" name="viyafonts.css" type="css">
+            <links>
+                <link href="/css/viyafonts.css" method="GET" rel="content" type="text/css" uri="/css/viyafonts.css"/>
+            </links>
+        </file>
+        <file contentKey="GWBEY45BDPJKVXB6NDWN3DRW54INU6VG" name="settings" type="resource">
+            <links>
+                <link href="/settings.json" method="GET" rel="content" type="application/vnd.sas.attributes" uri="/settings.json"/>
+            </links>
+        </file>
+    </files>
+    <formatLocale>en-US</formatLocale>
+    <generatedTimeStamp>2022-08-08T14:34:10.766Z</generatedTimeStamp>
+    <id>o_ed2813ee-c23b-4ee4-8ef5-b7481b020bd5</id>
+    <links>
+        <link href="/reportPackages/packages/o_ed2813ee-c23b-4ee4-8ef5-b7481b020bd5" method="GET" rel="self" type="application/vnd.sas.report.package" uri="/reportPackages/packages/o_ed2813ee-c23b-4ee4-8ef5-b7481b020bd5"/>
+        <link href="/reportData/results?reportContentKey=HP7NY4WOVT4ZOQ66UPSXFNQEILDDBXYQ&amp;reportUri=%2Freports%2Freports%2F87efaf85-487c-4d87-bc31-357811f8f4ae&amp;reportDate=2022-08-08T14%3A34%3A10.766Z" method="POST" rel="requery" responseType="application/vnd.sas.report.results" type="application/vnd.sas.report.query.state" uri="/reportData/results?reportContentKey=HP7NY4WOVT4ZOQ66UPSXFNQEILDDBXYQ&amp;reportUri=%2Freports%2Freports%2F87efaf85-487c-4d87-bc31-357811f8f4ae&amp;reportDate=2022-08-08T14%3A34%3A10.766Z"/>
+        <link href="/reportData/jobs?reportContentKey=HP7NY4WOVT4ZOQ66UPSXFNQEILDDBXYQ&amp;reportUri=%2Freports%2Freports%2F87efaf85-487c-4d87-bc31-357811f8f4ae&amp;reportDate=2022-08-08T14%3A34%3A10.766Z" method="POST" rel="requeryJob" responseType="application/vnd.sas.report.data.job" type="application/vnd.sas.report.query.state" uri="/reportData/jobs?reportContentKey=HP7NY4WOVT4ZOQ66UPSXFNQEILDDBXYQ&amp;reportUri=%2Freports%2Freports%2F87efaf85-487c-4d87-bc31-357811f8f4ae&amp;reportDate=2022-08-08T14%3A34%3A10.766Z"/>
+    </links>
+    <locale>en-US</locale>
+    <modifiedTimeStamp>2022-08-05T15:26:30.914Z</modifiedTimeStamp>
+    <size>122213</size>
+    <source>/reports/reports/87efaf85-487c-4d87-bc31-357811f8f4ae</source>
+    <version>27</version>
+    <warnings>result</warnings>
+</reportPackage>
